@@ -47,8 +47,6 @@ import org.spout.api.Spout;
 import org.spout.api.entity.Entity;
 import org.spout.api.geo.World;
 import org.spout.api.geo.cuboid.ChunkSnapshot;
-import org.spout.api.gui.Screen;
-import org.spout.api.gui.screen.LoadingScreen;
 import org.spout.api.gui.screen.ScreenStack;
 import org.spout.api.material.BlockMaterial;
 import org.spout.api.math.Matrix;
@@ -64,20 +62,11 @@ import org.spout.api.render.Texture;
 import org.spout.engine.batcher.PrimitiveBatch;
 import org.spout.engine.filesystem.FileSystem;
 import org.spout.engine.renderer.BatchVertexRenderer;
-import org.spout.engine.renderer.shader.ClientShader;
 import org.spout.engine.util.RenderModeConverter;
 import org.spout.engine.world.SpoutChunk;
 import org.spout.engine.world.SpoutWorld;
-import org.spout.engine.batcher.PrimitiveBatch;
-import org.spout.engine.filesystem.FileSystem;
-
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
-
-
-import java.awt.Color;
-import java.io.File;
-import java.util.Stack;
 
 public class SpoutClient extends SpoutEngine implements Client {
 	private final String name = "Spout Client";
